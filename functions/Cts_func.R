@@ -29,6 +29,8 @@ library(tidyverse) #first load tidyverse then filter through:
 continuous_block<- function(
                        ds_in #Dataset in
                       ,by_group = c('trtn') #variable name - use the NUMERIC version
+                      ,dps = 1
+                      ,statistics = c('n','Mean','SD','Median','IQR','MinMax')
                       ,ds_out #Dataset out
                       ){
   
