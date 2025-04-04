@@ -35,7 +35,7 @@
 Big_N_calcs<-
     function(
      ds_in #Dataset in
-    ,iid            = quo(usubjid)
+    ,iid            = usubjid
     ,by_group       = trtan #variable name - use the NUMERIC version
     ,by_group_char  = trta
     ,ds_out #Dataset out
