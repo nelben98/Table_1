@@ -54,7 +54,7 @@ Big_N_calcs<-
         ds_out%>%
         left_join(unique_chars
                  ,by = join_by({{by_group}}== {{by_group}}))%>%
-        select({{by_group}},{{by_group_char}},n) #neat order
+        select({{by_group}},{{by_group_char}},Big_N = n) #neat order
 
     return(ds_out_char)       
     }
